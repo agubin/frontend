@@ -1,0 +1,31 @@
+body {
+    background-color: #ffffee;
+    padding: 15px; /*внутрений отступ*/
+}
+img { /*Для всех img*/
+    width: 7%; /*Проценты от ширины экрана а не картинки*/
+    border: 3px solid red; /*еще есть dotte dashed*/
+}
+#face {
+    width: 12%;
+    border: 2px dashed brown;
+    margin: 10px; /*отступ*/
+}
+.photo {
+    width: 10%;
+    border: 5px dotted blue;
+}
+.centered {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: block;
+}
+h2 {
+    color: green;
+    background-color: yellowgreen; /*переопределения свойства родительского*/
+}
+form.feedback input,
+form.feedback textarea {
+    width: 100%;
+}

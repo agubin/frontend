@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя домашняя страница</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+    <h1 class="centered">Привет!</h1>
+    <p>Меня зовут Андрей Губин</p>
+    <p>Это моя домашняя страница</p>
+    <h2>Обо мне</h2>
+    <p>Я прокачиваю скиллы</p>
+    <!-- <img src="/images/avatar.jpg" /> -->
+    <img src="http://localhost:8000/images/avatar.jpg" /> <!-- Обрати внимание обращение по протоколу-->
+    <img src="/images/avatar.jpg" id="face"/>
+    <img src="/images/avatar.jpg" class="photo centered"/>
+    <!-- <img src="./avatar.jpg" style="width: 18;"/>  
+        так можно непосредственно у картинки указать стиль, но общий все равно главнее
+        но используя классы и ид можно коуретизировать-->
+    <p><a href="https://google.com" target="_blank">Go to GOOGLE</a></p> <!--target делает открытие на новой странице-->
+    <!-- <form action="<Путь по которому делать запрос>" class="feedback" method="<Метод запроса>"> -->
+    <form action="/send-feedback" class="feedback" method="POST">
+        <p>Отправьте мне сообщение!</p>
+        <p><input type="text" name="name" placeholder="Ваше имя" /></p>
+        <p><textarea name="message" placeholder="Ваше сообщение"></textarea></p>
+        <p><input type="submit" value="Отрпавить"/></p>
+    </form>
+</body>
+</html>
